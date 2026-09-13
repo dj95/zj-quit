@@ -50,7 +50,7 @@
           buildInputs = [
             # Add additional build inputs here
             pkgs.libiconv
-          ] ++ pkgs.lib.optionals pkgs.stdenv.isDarwin [
+          ] ++ pkgs.lib.optionals pkgs.stdenv.hostPlatform.isDarwin [
             # Additional darwin specific inputs can be set here
           ];
         };
