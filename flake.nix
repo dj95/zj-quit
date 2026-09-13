@@ -28,7 +28,7 @@
 
         rustWithWasiTarget = pkgs.rust-bin.stable.latest.default.override {
           extensions = [ "rust-src" "rust-std" "rust-analyzer" ];
-          targets = [ "wasm32-wasi" ];
+          targets = [ "wasm32-wasip1" ];
         };
 
         # NB: we don't need to overlay our custom toolchain for the *entire*
